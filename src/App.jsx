@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './App.css';
 
 function App() {
-  const [color, setColor] = useState('black');
+  const [color, setColor] = useState('red');
 
   const handleColorChange = (e) => {
     setColor(e.target.value);
@@ -10,7 +10,7 @@ function App() {
 
   return (
     <div className="App" style={{ backgroundColor: color }}>
-      <h1>Color</h1>
+      <h1>Color change</h1>
       <input 
         type="color" 
         onChange={handleColorChange} 
