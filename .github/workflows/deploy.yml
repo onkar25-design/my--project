@@ -1,4 +1,4 @@
-name: Build and Deploy
+name: Build, Check, Deploy, and Start
 
 on:
   push:
@@ -34,3 +34,6 @@ jobs:
         env:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+
+      - name: Start project (development server)
+        run: npm run dev
