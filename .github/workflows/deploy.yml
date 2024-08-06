@@ -31,7 +31,7 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: build-artifacts
-          path: build
+          path: dist
 
   deploy:
     needs: build
@@ -45,7 +45,7 @@ jobs:
         uses: actions/download-artifact@v2
         with:
           name: build-artifacts
-          path: build
+          path: dist
 
       - name: List downloaded build directory contents
         run: ls -alh build
