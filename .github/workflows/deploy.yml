@@ -47,9 +47,6 @@ jobs:
           name: build-artifacts
           path: dist
 
-      - name: List downloaded build directory contents
-        run: ls -alh build
-
       - name: Install Netlify CLI
         run: npm install -g netlify-cli
 
