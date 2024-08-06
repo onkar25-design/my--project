@@ -10,7 +10,7 @@ function App() {
 
   return (
     <div className="App" style={{ backgroundColor: color }}>
-      <h1>Color change</h1>
+      <h1>Color changer</h1>
       <input 
         type="color" 
         onChange={handleColorChange} 
