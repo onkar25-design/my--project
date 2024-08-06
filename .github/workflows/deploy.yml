@@ -21,11 +21,8 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Run ESLint
-        run: npx eslint src/
-
       - name: Build project
-        run: CI=false npm run build
+        run: npm run build
 
       - name: List build directory contents
         run: ls -alh build
